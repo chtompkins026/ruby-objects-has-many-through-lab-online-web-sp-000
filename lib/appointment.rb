@@ -13,6 +13,10 @@ class Appointment
     self.patient
   end 
   
+  def doctors
+    self.doctor
+  end
+  
   #class Method 
   def self.all 
     @@all 
