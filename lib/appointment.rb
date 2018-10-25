@@ -9,6 +9,7 @@ class Appointment
     @@all << self 
   end 
   
+  def 
   
   #class Method 
   def self.all 
