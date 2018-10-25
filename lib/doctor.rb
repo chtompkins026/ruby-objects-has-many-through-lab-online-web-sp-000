@@ -10,16 +10,19 @@ attr_reader :name, :appointment, :patient
   end 
   
   def new_appointment(patient, date)
-    new_appointment = Appointment.new(patient, self, date)
+    Appointment.new(patient, self, date)
   end
-  
-  def appointments 
-    Appointments.all.select {|data| data.doctor == self} 
-  end 
-  
-  def patients 
-    Patients.all.map {|data| data.patients} 
-  end 
+   def appointments
+    Appointment.all.select do |appointment|
+      appointment.doctor == self
+    end
+  end
+   def patients
+    appointments.map do |appointment|
+      appointment.patients
+    end
+  end
+ end
   
   
   #class methods 
