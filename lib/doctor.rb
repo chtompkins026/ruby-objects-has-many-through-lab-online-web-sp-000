@@ -21,7 +21,7 @@ class Doctor
   end 
   
   def patients 
-    Patients.all.map 
+    Patients.all.map {|data| data.patients} 
   end 
   
   
