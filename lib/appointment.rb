@@ -9,7 +9,9 @@ class Appointment
     @@all << self 
   end 
   
-  def 
+  def patients 
+    self.patients 
+  end 
   
   #class Method 
   def self.all 
