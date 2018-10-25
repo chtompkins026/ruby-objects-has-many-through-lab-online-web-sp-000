@@ -18,9 +18,7 @@ attr_reader :name, :appointment, :doctor
   end
   
   def doctors
-    Appointment.all.map do |appointment|
-      appointment.doctor
-    end
+    Appointment.all.map {|appointment| appointment.doctor}
   end
   
   #class Method 
