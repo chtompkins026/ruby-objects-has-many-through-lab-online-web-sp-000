@@ -21,8 +21,6 @@ attr_reader :name, :appointment, :patient
     appointments.map {|appointment| appointment.patients} 
   end
  
-  
-  
   #class methods 
   
   def self.all 
