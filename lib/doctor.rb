@@ -7,11 +7,6 @@ attr_reader :name, :appointment, :patient
   def initialize(name)
     @name = name 
     @@all << self 
-  end 
-  
-  def name 
-    @name 
-  end 
 
   def new_appointment(patient, date)
     new_appointment = Appointment.new(patient, self, date)
